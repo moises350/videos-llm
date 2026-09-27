@@ -1,7 +1,7 @@
 # Videos LLM — Scene-Driven Production and Composition Design
 
 **Date:** 2026-09-27  
-**Status:** Proposed  
+**Status:** Approved
 **Pilot project:** `a-casa-inteira-foi-apostada`
 
 ## 1. Purpose
