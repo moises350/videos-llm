@@ -17,6 +17,9 @@ dependencies = [
 [project.optional-dependencies]
 dev = ["pytest>=8.0,<9.0"]
 
+[project.scripts]
+videos-llm = "videos_llm.cli:entrypoint"
+
 [tool.setuptools.packages.find]
 where = ["src"]
 
