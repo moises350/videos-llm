@@ -1,43 +1,56 @@
 # videos-llm
 
-Laboratório local e versionável para produção manual de vídeos curtos com auxílio de IA.
+Laboratório local e versionável para conduzir a produção de vídeos curtos cena por cena até um MP4 final. O sistema registra cada tentativa de imagem, vídeo ou áudio, mantém a seleção aprovada de cada cena e monta o resultado com FFmpeg gerenciado pelo próprio projeto.
 
-O projeto está na Phase 0. Neste estágio ele oferece apenas modelos de domínio, templates YAML e carregamento com validação. Não existem providers, APIs externas, FFmpeg, tracking de produção, publicação ou analytics.
+O fluxo termina no arquivo MP4. Publicação em redes sociais continua manual e não há integração com contas externas.
 
-## Requisitos
+## Requisitos e instalação
 
 - Python 3.11 ou superior
-
-## Instalação para desenvolvimento
 
 ```powershell
 python -m pip install -e ".[dev]"
 ```
 
-## Documentos de um projeto
+Isso instala também o comando `videos-llm` e uma distribuição de FFmpeg usada sem depender de uma instalação global.
+
+## Estrutura de um projeto
 
 - `project.yaml`: identidade e configuração técnica global.
 - `brief.yaml`: intenção criativa.
 - `script.yaml`: narração, diálogos e textos de tela.
 - `storyboard.yaml`: duração e realização visual de cada cena.
+- `composition.yaml`: ordem, tratamento e mixagem dos materiais selecionados.
+- `production/<cena>/production.yaml`: histórico versionado de tentativas e seleções.
+- `media/`: arquivos importados, ignorados pelo Git.
+- `output/`: previews e MP4 final, também ignorados pelo Git.
 
-`project.yaml` é o entrypoint. Os demais documentos são encontrados pelos nomes convencionais no mesmo diretório.
+`project.yaml` é o ponto de entrada. Os demais documentos ficam no mesmo diretório de projeto, e os registros de produção são separados por cena.
 
-## Validação
+## Fluxo cena por cena
 
-```python
-from pathlib import Path
+O piloto incluído no repositório é `projects/a-casa-inteira-foi-apostada`. Para produzir a primeira cena:
 
-from videos_llm.infrastructure import load_project
-
-project = load_project(Path("path/to/project"))
-print(project.project.title)
+```powershell
+videos-llm validate projects/a-casa-inteira-foi-apostada
+videos-llm production import projects/a-casa-inteira-foi-apostada scene-001 C:\media\scene-001.png --method imagegen --prompt prompts/image/scene-001.md
+videos-llm production select projects/a-casa-inteira-foi-apostada scene-001 key_image asset-012345abcdef
+videos-llm validate projects/a-casa-inteira-foi-apostada --production
+videos-llm compose projects/a-casa-inteira-foi-apostada --preview
+videos-llm compose projects/a-casa-inteira-foi-apostada
 ```
+
+O comando `production import` imprime o identificador real do material criado. Substitua `asset-012345abcdef` por esse valor no comando `production select`.
+
+Repita importação e seleção para os papéis exigidos em cada cena. Novas tentativas não apagam as anteriores: o histórico e a procedência ficam em `production.yaml`, enquanto somente a tentativa escolhida é usada na montagem. A validação com `--production` informa exatamente qual seleção ainda falta.
+
+O preview é renderizado em 360 × 640 para validação rápida. A montagem final usa largura, altura, taxa de quadros e duração definidas pelo projeto. Ambos são gravados dentro de `output/`; o arquivo final padrão é `output/final.mp4`.
 
 ## Testes
 
 ```powershell
-python -m pytest
+python -m pytest -q
+python -m pip check
 ```
 
-Imagens, vídeos, áudio e outputs finais não são versionados inicialmente. Git LFS não está configurado.
+Imagens, vídeos, áudios e outputs renderizados não são versionados. Os YAMLs de produção são versionados para que as decisões criativas possam ser auditadas e retomadas.
