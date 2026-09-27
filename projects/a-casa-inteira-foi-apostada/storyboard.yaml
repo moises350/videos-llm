@@ -1,0 +1,212 @@
+schema_version: 1
+project_id: a-casa-inteira-foi-apostada
+version: 1
+status: approved
+
+scenes:
+  - id: scene-001
+    order: 1
+    duration_seconds: 4
+    purpose: "Anunciar o fim das bets enquanto o comportamento compulsivo continua."
+    status: ready
+    script_scene_id: scene-001
+    visual:
+      description: >
+        Sala brasileira modesta em 2026. Um televisor de tela plana exibe uma
+        apresentadora de telejornal anunciando a proibição. Em primeiro plano,
+        um homem humano continua tocando compulsivamente um aplicativo de
+        apostas no smartphone; a esposa e a filha percebem, sem intervir.
+      composition: >
+        Enquadramento de fonte 4:3 dentro do quadro vertical, televisor no terço
+        superior e mãos com smartphone no terço inferior. Nada na família é
+        animal ou monstruoso.
+      camera:
+        framing: medium_wide_domestic
+        angle: eye_level
+        movement: "Correção curta de ombro seguida de aproximação óptica quase imperceptível."
+        lens: "Zoom broadcast equivalente a 32–45 mm."
+      lighting:
+        style: "Luz doméstica plana misturada ao azul do televisor."
+        notes: "Altas luzes duras de vídeo e sombras sem latitude cinematográfica."
+      mood:
+        - ordinary
+        - compulsive
+        - ominous
+    audio:
+      ambience: "Sala pequena, rua distante e zumbido eletrônico da televisão."
+      sfx:
+        - "Jingle de telejornal alegre."
+        - "Toques secos no vidro do smartphone."
+      music_note: "Tema otimista começa limpo demais para o assunto."
+
+  - id: scene-002
+    order: 2
+    duration_seconds: 6
+    purpose: "Materializar a perda da casa e a dessaturação da família."
+    status: ready
+    script_scene_id: scene-002
+    visual:
+      description: >
+        Mantendo a mesma sala e a mesma família humana, sacolas de mercado, um
+        cartão bancário, um capacete de trabalho e retratos familiares se
+        desfazem em fitas luminosas e entram no smartphone. Os móveis somem por
+        etapas e a pele da família perde cor, mas ninguém se transforma.
+      composition: >
+        Plano geral fixo o bastante para ler cada objeto antes de desaparecer;
+        o telefone é o ponto de fuga das fitas, sem logomarca de bet legível.
+      camera:
+        framing: wide_domestic_tableau
+        angle: eye_level
+        movement: "Leve recuo de zoom enquanto o cômodo esvazia."
+        lens: "Zoom broadcast equivalente a 28–35 mm."
+      lighting:
+        style: "Luz prática de sala que enfraquece junto com a saturação."
+        notes: "As fitas emitem verde eletrônico e magenta composto sem parecer magia limpa."
+      mood:
+        - helpless
+        - uncanny
+        - depleted
+    audio:
+      ambience: "O ambiente doméstico fica progressivamente oco."
+      sfx:
+        - "Confirmações eletrônicas com cauda de caixa registradora."
+        - "Pequenos dropouts de fita a cada desaparecimento."
+      music_note: "O jingle começa a desafinar e perder velocidade."
+
+  - id: scene-003
+    order: 3
+    duration_seconds: 4
+    purpose: "Associar influência comercial à normalização das apostas."
+    status: ready
+    script_scene_id: scene-003
+    visual:
+      description: >
+        Virginia Fonseca reconhecível pela roupa, cabelo, óculos e gesto de sua
+        aparência na CPI, sentada diante do microfone com uma cabeça de rato
+        bege-clara anatomicamente integrada. Ela sorri e faz gesto positivo;
+        não há fala atribuída a ela.
+      composition: >
+        Plano médio institucional, microfone entrando pela lateral, fundo
+        geométrico da comissão e mãos com anéis visíveis.
+      camera:
+        framing: medium_committee_shot
+        angle: eye_level
+        movement: "Pequeno reenquadramento de câmera de transmissão."
+        lens: "Zoom broadcast equivalente a 50–70 mm."
+      lighting:
+        style: "Iluminação branca e plana de audiência pública."
+        notes: "Focinho, pelos e cabelo recebem a mesma luz institucional."
+      mood:
+        - confident
+        - polished
+        - unsettling
+    audio:
+      ambience: "Sala de comissão comprimida por microfones de televisão."
+      sfx:
+        - "Disparos de câmera e aplausos curtos muito comprimidos."
+        - "Ruído de bigodes quase subliminar."
+      music_note: "O tema sustenta um acorde levemente errado."
+
+  - id: scene-004
+    order: 4
+    duration_seconds: 4
+    purpose: "Transformar promoção e ostentação em destino visível do dinheiro perdido."
+    status: ready
+    script_scene_id: scene-004
+    visual:
+      description: >
+        MauMau ZK reconhecível pelo corpo, boné, óculos dourados, correntes,
+        relógio, tatuagens e gesto de mãos, com cabeça de rato larga cinza-
+        marrom integrada. Em um estúdio promocional de 2026, as fitas vindas da
+        casa se enrolam e viram novas correntes douradas.
+      composition: >
+        Plano americano frontal de programa promocional, personagem central e
+        painéis abstratos de aposta sem marca legível ao fundo.
+      camera:
+        framing: medium_wide_promo
+        angle: slightly_low
+        movement: "Zoom óptico curto e vaidoso, seguido de correção tardia."
+        lens: "Zoom broadcast equivalente a 40–55 mm."
+      lighting:
+        style: "Luz frontal de palco com recortes verdes e dourados."
+        notes: "Reflexos realistas nos óculos, relógio e correntes; sem estética de videoclipe 4K."
+      mood:
+        - ostentatious
+        - promotional
+        - predatory
+    audio:
+      ambience: "Estúdio promocional com plateia distante."
+      sfx:
+        - "Aplausos comprimidos e obturadores."
+        - "Atrito metálico das fitas virando correntes."
+      music_note: "O jingle desacelera e ganha instabilidade de fita."
+
+  - id: scene-005
+    order: 5
+    duration_seconds: 5
+    purpose: "Levar a circulação simbólica do dinheiro ao espaço institucional."
+    status: ready
+    script_scene_id: scene-005
+    visual:
+      description: >
+        Ciro Nogueira reconhecível pelo cabelo grisalho, terno azul-marinho,
+        camisa branca, gravata lavanda e relógio, diante de microfone de
+        comissão com cabeça de rato escura integrada. Enquanto ele move a boca
+        sem diálogo audível, fitas passam sob a mesa e seguem para corredores
+        institucionais como metáfora editorial, não como registro de pagamento.
+      composition: >
+        Plano médio formal com mesa, microfone e arquitetura pública; as fitas
+        ocupam o rodapé do quadro sem indicar destinatário específico.
+      camera:
+        framing: medium_institutional
+        angle: eye_level
+        movement: "Pan mínimo acompanha as fitas e retorna ao rosto."
+        lens: "Zoom broadcast equivalente a 55–75 mm."
+      lighting:
+        style: "Luz fria e homogênea de plenário televisionado."
+        notes: "Sem luz noir; o incômodo vem da normalidade burocrática."
+      mood:
+        - composed
+        - institutional
+        - ominous
+    audio:
+      ambience: "Ar-condicionado, sala pública e reverberação curta de microfone."
+      sfx:
+        - "Cliques de câmera que se confundem com dentes muito discretos."
+        - "Deslizamento das fitas sob a mesa."
+      music_note: "O jingle já está grave, lento e quase irreconhecível."
+
+  - id: scene-006
+    order: 6
+    duration_seconds: 7
+    purpose: "Retornar à família e mostrar que o dano permaneceu depois do sinal."
+    status: ready
+    script_scene_id: scene-006
+    visual:
+      description: >
+        A mesma família humana ocupa a sala quase vazia. O smartphone está
+        escuro. No televisor, a transmissão colapsa em um ponto branco; por um
+        instante, o vidro reflete os três familiares isolados uns dos outros.
+        O ponto apaga e resta apenas o reflexo preto.
+      composition: >
+        Plano geral simétrico, muito espaço vazio e família separada em três
+        ilhas no quadro. O texto final entra sobre preto nos últimos cinco
+        segundos, aplicado somente na composição.
+      camera:
+        framing: wide_empty_room
+        angle: eye_level
+        movement: "Câmera fixa; apenas respiração de tripé e tracking analógico."
+        lens: "Zoom broadcast equivalente a 35–45 mm."
+      lighting:
+        style: "Última luz azul do televisor, depois ambiente quase preto."
+        notes: "Preservar detalhes suficientes para ler a família no reflexo."
+      mood:
+        - empty
+        - isolated
+        - unresolved
+    audio:
+      ambience: "Zumbido da televisão e silêncio doméstico sem música."
+      sfx:
+        - "Colapso de CRT em ponto branco."
+        - "Clique seco de desligamento."
+      music_note: "O tema para antes do ponto branco e não retorna."

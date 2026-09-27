@@ -1,0 +1,34 @@
+schema_version: 1
+project_id: a-casa-inteira-foi-apostada
+
+scenes:
+  - id: scene-001
+    narration: "Em 2026, o Brasil tirou as bets do ar."
+    dialogue: []
+    on_screen_text: []
+
+  - id: scene-002
+    narration: "Mas, antes disso, elas já tinham entrado em casa. Primeiro levaram o troco."
+    dialogue: []
+    on_screen_text: []
+
+  - id: scene-003
+    narration: "Depois, as compras."
+    dialogue: []
+    on_screen_text: []
+
+  - id: scene-004
+    narration: "Depois, o tempo."
+    dialogue: []
+    on_screen_text: []
+
+  - id: scene-005
+    narration: "Enquanto uns perdiam tudo, outros sorriam para a câmera."
+    dialogue: []
+    on_screen_text: []
+
+  - id: scene-006
+    narration: "O sinal acabou. O prejuízo ficou."
+    dialogue: []
+    on_screen_text:
+      - "O sinal acabou. O prejuízo ficou."

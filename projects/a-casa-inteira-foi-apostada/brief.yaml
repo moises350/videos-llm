@@ -1,0 +1,88 @@
+schema_version: 1
+project_id: a-casa-inteira-foi-apostada
+
+objective: >
+  Produzir um filme vertical perturbador sobre o dano doméstico e humano
+  deixado pelo vício em apostas online no Brasil, contrastando famílias que
+  perderam dinheiro, compras e tempo com figuras públicas beneficiadas pela
+  promoção ou proximidade com o ecossistema das bets.
+
+audience:
+  primary: "Adultos brasileiros expostos à normalização das apostas online."
+  desired_reaction:
+    - disturbing_recognition
+    - empathy_for_harmed_families
+    - distrust_of_glamorized_betting
+
+creative:
+  premise: >
+    Em 2026, o sinal das bets acaba, mas uma casa já foi esvaziada. O dinheiro
+    e os objetos da família atravessam o celular como fitas luminosas e
+    reaparecem como prestígio em três ambientes de influência e poder.
+  hook: >
+    A televisão anuncia o fim das bets enquanto um homem continua tocando a
+    tela; a proibição chegou depois que a aposta já entrou em casa.
+  key_message: "O sinal acabou. O prejuízo ficou."
+  tone:
+    - disturbing
+    - surreal
+    - restrained
+    - satirical
+  narrative_arc:
+    - announcement
+    - domestic_loss
+    - influence
+    - promotion
+    - institutional_power
+    - aftermath
+
+visual_direction:
+  era: "Brasil de 2026 capturado por televisão brasileira de meados dos anos 1990"
+  style:
+    - native_betacam_sd
+    - analog_broadcast
+    - realistic_surrealism
+    - editorial_satire
+  color_notes:
+    - "Cores domésticas perdem saturação conforme a casa é consumida."
+    - "Os ambientes dos ratos preservam dourados, vermelhos e azuis televisivos."
+    - "Altas luzes duras e pele tratada como vídeo de estúdio, não cinema digital."
+  texture:
+    - composite_chroma_bleed
+    - interlacing
+    - tracking_dropout
+    - mild_ghosting
+    - betacam_softness
+  references:
+    - "Telejornal e programa de auditório brasileiro de meados dos anos 1990."
+    - "Smartphones, Pix, aplicativos e televisores inequivocamente de 2026."
+
+audio_direction:
+  narration_style: "Reportagem televisiva brasileira dos anos 1990, sóbria e sem indignação performática."
+  music_style: "Jingle televisivo excessivamente alegre que desafina e desacelera."
+  sound_notes:
+    - "Confirmações eletrônicas com ressonância de caixa registradora."
+    - "Aplausos comprimidos e disparos de câmeras junto às figuras públicas."
+    - "Dentes e bigodes quase imperceptíveis, nunca guinchos cômicos."
+    - "Zumbido de TV, colapso de CRT e clique seco no final."
+
+constraints:
+  must_include:
+    - "Pessoas prejudicadas permanecem humanas."
+    - "Virginia Fonseca, MauMau ZK e Ciro Nogueira recebem cabeças de rato realistas e específicas."
+    - "As cabeças são anatomicamente integradas a corpos humanos reconhecíveis."
+    - "Somente o texto final obrigatório aparece como overlay editorial."
+    - "Toda associação factual usada na sátira deve vir de fonte pública documentada."
+  avoid:
+    - "Falas inventadas para pessoas reais."
+    - "Afirmações de condenação, crime, pagamento específico ou conduta privada."
+    - "Gore, presas monstruosas, esgoto, mascotes ou ratos cartunescos."
+    - "Aparência 4K limpa com filtro retrô superficial."
+    - "Nostalgia que sugira que a história acontece nos anos 1990."
+
+success_criteria:
+  - "O contexto brasileiro de 2026 é compreendido imediatamente."
+  - "A captura parece nativamente produzida em Betacam, não pós-processada sobre 4K."
+  - "A perda da família é emocionalmente central e os ratos funcionam como metáfora editorial."
+  - "Nenhuma imagem é apresentada como prova documental de pagamento ou crime específico."
+  - "O final deixa reconhecimento perturbador, não alívio com a proibição."
