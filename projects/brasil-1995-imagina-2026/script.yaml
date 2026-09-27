@@ -1,0 +1,31 @@
+schema_version: 1
+project_id: brasil-1995-imagina-2026
+
+scenes:
+  - id: scene-001
+    narration: "Brasil, 1995. Como será o mundo em 2026?"
+    dialogue: []
+    on_screen_text: []
+
+  - id: scene-002
+    narration: "Computadores poderão conversar com você."
+    dialogue: []
+    on_screen_text: []
+
+  - id: scene-003
+    narration: "Você poderá falar com qualquer pessoa através da Internet."
+    dialogue: []
+    on_screen_text: []
+
+  - id: scene-004
+    narration: "Automóveis saberão encontrar o caminho sozinhos."
+    dialogue: []
+    on_screen_text: []
+
+  - id: scene-005
+    narration: "Seu sistema está atualizando. Tempo restante: 4 horas."
+    dialogue: []
+    on_screen_text:
+      - "Seu sistema está atualizando."
+      - "Tempo restante: 4 horas."
+      - "2026 não saiu exatamente como planejado."

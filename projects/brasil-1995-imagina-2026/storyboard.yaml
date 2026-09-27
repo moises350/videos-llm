@@ -1,0 +1,177 @@
+schema_version: 1
+project_id: brasil-1995-imagina-2026
+version: 1
+status: ready
+
+scenes:
+  - id: scene-001
+    order: 1
+    duration_seconds: 4
+    purpose: "Hook e estabelecimento do programa fictício em 1995"
+    status: ready
+    script_scene_id: scene-001
+    visual:
+      description: >
+        A apresentadora recorrente abre um programa especial em um estúdio
+        brasileiro colorido de 1995. Atrás dela, uma parede de monitores CRT,
+        formas geométricas físicas e gráficos retrofuturistas sugerem uma
+        transmissão importante sobre o futuro.
+      composition: >
+        Plano médio vertical com a apresentadora no centro inferior e espaço
+        visual limpo no terço superior para um título aplicado na edição.
+      camera:
+        framing: medium_shot
+        angle: eye_level
+        movement: "Aproximação óptica muito lenta, típica de câmera de estúdio"
+        lens: "Zoom broadcast equivalente a aproximadamente 35–50 mm"
+      lighting:
+        style: "Iluminação frontal de televisão com recortes coloridos no cenário"
+        notes: "Key light suave, preenchimento alto e reflexos magenta e cobalto"
+      mood:
+        - authoritative
+        - optimistic
+        - nostalgic
+    audio:
+      ambience: "Estúdio de televisão silencioso com leve ruído eletrônico"
+      sfx:
+        - "Sting curto de abertura de programa especial"
+        - "Sutil ruído de tracking VHS no primeiro quadro"
+      music_note: "Tema corporativo de sintetizador começa com energia"
+
+  - id: scene-002
+    order: 2
+    duration_seconds: 4.5
+    purpose: "Demonstrar a previsão de computadores capazes de conversar"
+    status: ready
+    script_scene_id: scene-002
+    visual:
+      description: >
+        A mesma apresentadora demonstra um computador futurista gigantesco em
+        um laboratório cenográfico do mesmo programa. O equipamento combina
+        gabinete bege, monitor CRT convexo, teclado robusto, botões físicos,
+        LEDs e pequenas ventoinhas, parecendo avançado segundo 1995.
+      composition: >
+        Plano americano em três quartos: apresentadora à esquerda, computador
+        ocupando a direita e o monitor visível sem depender de texto legível.
+      camera:
+        framing: medium_wide_shot
+        angle: eye_level_three_quarter
+        movement: "Pan curto e controlado da apresentadora para o computador"
+        lens: "Zoom broadcast equivalente a aproximadamente 32–45 mm"
+      lighting:
+        style: "Demonstração tecnológica de programa de variedades dos anos 90"
+        notes: "Luz frontal quente, recorte azul no equipamento e LEDs práticos"
+      mood:
+        - amazed
+        - sincere
+        - playfully_outdated
+    audio:
+      ambience: "Zumbido baixo de CRT e ventilação de computador"
+      sfx:
+        - "Bipe eletrônico curto em resposta ao toque de um botão"
+      music_note: "Tema otimista continua em volume baixo"
+
+  - id: scene-003
+    order: 3
+    duration_seconds: 4.5
+    purpose: "Mostrar a visão de 1995 para comunicação móvel pela Internet"
+    status: ready
+    script_scene_id: scene-003
+    visual:
+      description: >
+        No mesmo universo televisivo, a apresentadora segura um aparelho
+        portátil volumoso com antena telescópica, teclado numérico, botões
+        coloridos e pequena tela monocromática. O dispositivo é futurista para
+        1995, mas claramente não é um smartphone moderno.
+      composition: >
+        Close médio da apresentadora com o aparelho próximo ao rosto; fundo do
+        estúdio reconhecível e tela posicionada para receber gráficos simples
+        não legíveis.
+      camera:
+        framing: medium_close_up
+        angle: eye_level
+        movement: "Zoom óptico curto para destacar o aparelho"
+        lens: "Zoom broadcast equivalente a aproximadamente 50–70 mm"
+      lighting:
+        style: "Luz de estúdio macia com reflexos quentes no plástico do aparelho"
+        notes: "Fundo cobalto e coral, pele natural e brilho discreto na antena"
+      mood:
+        - enthusiastic
+        - curious
+        - charmingly_impractical
+    audio:
+      ambience: "Ambiente discreto de estúdio"
+      sfx:
+        - "Tom de conexão digital curto, inspirado em modem"
+      music_note: "Pequeno acento de sintetizador acompanha o zoom"
+
+  - id: scene-004
+    order: 4
+    duration_seconds: 5
+    purpose: "Apresentar uma visão retrofuturista de navegação autônoma"
+    status: ready
+    script_scene_id: scene-004
+    visual:
+      description: >
+        A apresentadora está no interior de um carro brasileiro compacto de
+        meados dos anos 90, adaptado pelo programa como veículo do futuro. O
+        painel possui muitos botões, LEDs, um pequeno CRT com mapa vetorial
+        primitivo e indicadores eletrônicos montados de forma física.
+      composition: >
+        Plano interno vertical visto do banco do passageiro, mostrando o rosto
+        da apresentadora, suas mãos relaxadas próximas ao volante e o painel
+        retrofuturista em primeiro plano.
+      camera:
+        framing: interior_medium_shot
+        angle: passenger_side_eye_level
+        movement: "Vibração leve e natural de carro em movimento, sem câmera flutuante"
+        lens: "Grande-angular moderada equivalente a aproximadamente 28–35 mm"
+      lighting:
+        style: "Luz diurna suave entrando pelos vidros com fill discreto de televisão"
+        notes: "LEDs verdes e âmbar, reflexos realistas em plásticos cinza e bege"
+      mood:
+        - confident
+        - futuristic_for_1995
+        - practical
+    audio:
+      ambience: "Motor compacto, pneus no asfalto e interior de carro"
+      sfx:
+        - "Bipe de navegação eletrônico simples"
+      music_note: "Trilha mantém o entusiasmo sem virar ação ou cyberpunk"
+
+  - id: scene-005
+    order: 5
+    duration_seconds: 8
+    purpose: "Punchline tecnológica e ending seco"
+    status: ready
+    script_scene_id: scene-005
+    visual:
+      description: >
+        Retorno ao mesmo estúdio e à mesma apresentadora da abertura. Ela mantém
+        o sorriso otimista enquanto um monitor CRT de demonstração muda para uma
+        interface genérica de atualização. Na edição, a área da tela receberá
+        sequencialmente os textos exatos “Seu sistema está atualizando.” e
+        “Tempo restante: 4 horas.”. O plano final corta para um card do mesmo
+        pacote gráfico com “2026 não saiu exatamente como planejado.”.
+      composition: >
+        Plano médio com apresentadora à esquerda e CRT grande à direita. A tela
+        possui área limpa e estável reservada para overlays legíveis adicionados
+        na edição; o card final também será composto posteriormente.
+      camera:
+        framing: medium_two_subject_composition
+        angle: eye_level
+        movement: "Câmera fixa; apenas um pequeno reajuste de zoom antes da revelação"
+        lens: "Zoom broadcast equivalente a aproximadamente 40–55 mm"
+      lighting:
+        style: "Mesma iluminação e paleta do estúdio da scene-001"
+        notes: "Otimismo visual preservado; a comédia vem do timing, não de luz dramática"
+      mood:
+        - optimistic_at_first
+        - awkward_pause
+        - dry_humor
+    audio:
+      ambience: "Mesmo ruído eletrônico do estúdio da abertura"
+      sfx:
+        - "Bipe inocente de sistema antes da informação de quatro horas"
+        - "Pequeno clique de fita no corte final"
+      music_note: "Trilha para abruptamente após a revelação e deixa uma pausa seca"

@@ -1,0 +1,107 @@
+schema_version: 1
+project_id: brasil-1995-imagina-2026
+
+objective: >
+  Produzir um vídeo vertical de aproximadamente 26 segundos que pareça um
+  programa especial ou comercial brasileiro realmente gravado em 1995,
+  imaginando com otimismo como seria o distante ano de 2026 e encerrando com
+  uma frustração tecnológica cotidiana. O conteúdo é destinado a Instagram
+  Reels, TikTok e YouTube Shorts.
+
+audience:
+  primary: >
+    Brasileiros adultos e jovens familiarizados com a estética da televisão
+    dos anos 90, cultura de internet, tecnologia cotidiana e humor nostálgico.
+  desired_reaction:
+    - "Reconhecer imediatamente a televisão brasileira de 1995"
+    - "Sentir nostalgia sem perder o ritmo de um vídeo curto"
+    - "Achar plausível e engraçada a visão equivocada do futuro"
+    - "Compartilhar por identificação com a punchline tecnológica"
+
+creative:
+  premise: >
+    Um programa especial brasileiro produzido em 1995 apresenta previsões
+    otimistas sobre computadores falantes, comunicação pela Internet e carros
+    autônomos, todos imaginados com a linguagem industrial, gráfica e cultural
+    disponível naquela época.
+  hook: "Brasil, 1995. Como será o mundo em 2026?"
+  key_message: "2026 não saiu exatamente como planejado."
+  tone:
+    - nostalgic
+    - humorous
+    - optimistic
+    - retrofuturistic
+    - deadpan_at_the_end
+  narrative_arc:
+    - "Abrir como um especial de televisão importante e otimista"
+    - "Apresentar três previsões tecnológicas cada vez mais ambiciosas"
+    - "Manter a confiança no futuro até o último momento"
+    - "Quebrar a promessa com uma atualização de quatro horas"
+    - "Encerrar rapidamente com uma frase seca"
+
+visual_direction:
+  era: "Brasil, aproximadamente 1995, sem elementos visuais posteriores à época"
+  style:
+    - "programa especial de televisão brasileira dos anos 90"
+    - "comercial institucional de tecnologia"
+    - "retrofuturismo otimista imaginado em 1995"
+    - "cenografia física com CRTs, acrílico, laminado e metal pintado"
+    - "gráficos de broadcast analógico"
+  color_notes:
+    - "azul cobalto"
+    - "verde-petróleo"
+    - "magenta"
+    - "coral"
+    - "amarelo quente em pequenos acentos"
+    - "pretos elevados e brancos levemente amarelados de fita"
+  texture:
+    - "VHS de boa qualidade, mas visivelmente analógico"
+    - "scanlines discretas de CRT"
+    - "leve sangramento cromático"
+    - "imagem broadcast suave e pouco nítida"
+    - "ruído de fita e pequenas instabilidades de tracking"
+  references:
+    - visual-bible.md
+
+audio_direction:
+  narration_style: >
+    Locução brasileira de televisão dos anos 90, clara, confiante e
+    institucional, com entusiasmo sincero e sem ironia até a punchline.
+  music_style: >
+    Trilha corporativa otimista com sintetizadores digitais, bateria eletrônica
+    leve e pequenos stings de transição típicos de televisão dos anos 90.
+  sound_notes:
+    - "Ruído ambiente discreto de estúdio e equipamentos eletrônicos"
+    - "Pequenos bipes e acionamentos mecânicos nas demonstrações"
+    - "Chiado VHS e flutter sutis, nunca cobrindo a narração"
+    - "Queda ou interrupção seca da trilha na punchline"
+
+constraints:
+  must_include:
+    - "Duração total planejada entre 20 e 30 segundos, com alvo de 26 segundos"
+    - "Formato vertical 9:16 adequado a Reels, TikTok e YouTube Shorts"
+    - "Aparência de material produzido em 1995, não de vídeo moderno filtrado"
+    - "Identidade brasileira reconhecível sem depender de marcas reais"
+    - "A mesma apresentadora, linguagem cenográfica e pacote gráfico ao longo das cinco cenas"
+    - "Tecnologias de 2026 imaginadas com materiais, telas e interfaces plausíveis em 1995"
+    - "Textos finais aplicados posteriormente como overlays de edição"
+  avoid:
+    - "smartphones modernos"
+    - "interfaces flat ou minimalistas contemporâneas"
+    - "telas OLED ou displays ultrafinos"
+    - "estética Apple contemporânea"
+    - "roupas, cabelo ou maquiagem posteriores aos anos 90"
+    - "carros modernos"
+    - "neon cyberpunk genérico"
+    - "visual Blade Runner"
+    - "render 3D excessivamente limpo"
+    - "marcas e logotipos reais legíveis"
+    - "tipografia gerada como parte indispensável da imagem ou do vídeo"
+
+success_criteria:
+  - "O ano de 1995 e a origem brasileira são compreendidos nos primeiros quatro segundos."
+  - "As cinco cenas parecem pertencer ao mesmo programa fictício."
+  - "A tecnologia parece avançada para 1995 e ultrapassada para 2026."
+  - "Nenhum elemento moderno destrói a ilusão histórica."
+  - "A narração completa e o ending cabem naturalmente em aproximadamente 26 segundos."
+  - "As áreas destinadas a textos permitem aplicar overlays legíveis durante a edição."
