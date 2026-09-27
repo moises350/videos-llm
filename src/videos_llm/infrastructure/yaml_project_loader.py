@@ -26,7 +26,7 @@ ModelT = TypeVar("ModelT", bound=BaseModel)
 def _load_model(path: Path, model_type: type[ModelT]) -> ModelT:
     try:
         content = yaml.safe_load(path.read_text(encoding="utf-8"))
-    except (OSError, UnicodeError, yaml.YAMLError) as error:
+    except (OSError, UnicodeError, ValueError, yaml.YAMLError) as error:
         raise ProjectValidationError(f"{path.name}: {error}") from error
 
     if not isinstance(content, dict):

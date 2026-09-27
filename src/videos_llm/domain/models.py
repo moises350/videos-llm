@@ -8,7 +8,6 @@ from pydantic import (
     BaseModel,
     ConfigDict,
     Field,
-    PositiveFloat,
     PositiveInt,
     StringConstraints,
     field_validator,
@@ -25,6 +24,7 @@ LanguageTag = Annotated[
     str,
     StringConstraints(pattern=r"^[A-Za-z]{2,3}(?:-[A-Za-z0-9]{2,8})*$"),
 ]
+PositiveFiniteFloat = Annotated[float, Field(gt=0, allow_inf_nan=False)]
 
 
 class ProjectStatus(str, Enum):
@@ -59,7 +59,7 @@ class MediaFormat(BaseModel):
     ]
     width: PositiveInt
     height: PositiveInt
-    fps: PositiveFloat
+    fps: PositiveFiniteFloat
 
     @model_validator(mode="after")
     def validate_aspect_ratio(self) -> MediaFormat:
@@ -232,7 +232,7 @@ class Scene(BaseModel):
 
     id: SceneId
     order: PositiveInt
-    duration_seconds: PositiveFloat
+    duration_seconds: PositiveFiniteFloat
     purpose: NonEmptyStr
     status: SceneStatus
     script_scene_id: SceneId

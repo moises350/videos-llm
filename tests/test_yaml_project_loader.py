@@ -156,6 +156,20 @@ def test_load_project_wraps_yaml_syntax_error_with_filename(tmp_path: Path) -> N
         load_project(tmp_path)
 
 
+def test_load_project_wraps_invalid_yaml_timestamp_with_filename(tmp_path: Path) -> None:
+    write_project(tmp_path, valid_documents())
+    project_path = tmp_path / "project.yaml"
+    project_path.write_text(
+        project_path.read_text(encoding="utf-8").replace(
+            "'2026-09-26T18:00:00-03:00'",
+            "2026-13-26T18:00:00-03:00",
+        ),
+        encoding="utf-8",
+    )
+    with pytest.raises(ProjectValidationError, match="project.yaml"):
+        load_project(tmp_path)
+
+
 def test_load_project_rejects_non_mapping_yaml(tmp_path: Path) -> None:
     write_project(tmp_path, valid_documents())
     (tmp_path / "brief.yaml").write_text("- not\n- a\n- mapping\n", encoding="utf-8")

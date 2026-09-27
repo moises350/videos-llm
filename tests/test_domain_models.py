@@ -111,6 +111,17 @@ def test_media_format_rejects_non_positive_values(field: str) -> None:
         MediaFormat.model_validate(data)
 
 
+def test_media_format_rejects_infinite_fps() -> None:
+    data = {
+        "aspect_ratio": "9:16",
+        "width": 1080,
+        "height": 1920,
+        "fps": float("inf"),
+    }
+    with pytest.raises(ValidationError):
+        MediaFormat.model_validate(data)
+
+
 def test_content_brief_accepts_utf8_creative_content() -> None:
     brief = ContentBrief(
         schema_version=1,
@@ -177,6 +188,13 @@ def test_dialogue_line_requires_speaker_and_text() -> None:
 def test_scene_rejects_invalid_identity_order_or_duration(field: str, value: object) -> None:
     data = valid_scene().model_dump()
     data[field] = value
+    with pytest.raises(ValidationError):
+        Scene.model_validate(data)
+
+
+def test_scene_rejects_infinite_duration() -> None:
+    data = valid_scene().model_dump()
+    data["duration_seconds"] = float("inf")
     with pytest.raises(ValidationError):
         Scene.model_validate(data)
 
