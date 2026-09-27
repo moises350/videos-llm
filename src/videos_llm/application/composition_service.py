@@ -203,3 +203,39 @@ def resolve_composition(
         visual_items=resolved_visuals,
         audio_items=resolved_audio,
     )
+
+
+def render_composition(
+    project_directory: str | Path,
+    *,
+    preview: bool = False,
+    output_path: str | Path | None = None,
+    overwrite: bool = False,
+    ffmpeg_executable: str | Path | None = None,
+) -> Path:
+    from videos_llm.infrastructure.compositor import (
+        RenderProfile,
+        render_resolved_composition,
+    )
+
+    resolved = resolve_composition(project_directory)
+    profile = (
+        RenderProfile.preview()
+        if preview
+        else RenderProfile.final(resolved.project)
+    )
+    default_name = (
+        "preview.mp4" if preview else resolved.plan.output_filename
+    )
+    destination = (
+        Path(output_path)
+        if output_path is not None
+        else resolved.project_directory / "output" / default_name
+    )
+    return render_resolved_composition(
+        resolved,
+        destination,
+        profile,
+        overwrite=overwrite,
+        ffmpeg_executable=ffmpeg_executable,
+    )
