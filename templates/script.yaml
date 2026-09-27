@@ -1,0 +1,9 @@
+schema_version: 1
+project_id: sample-project
+
+scenes:
+  - id: scene-001
+    narration: "Toda grande história começa com uma ideia clara."
+    dialogue: []
+    on_screen_text:
+      - "Uma ideia. Poucos segundos."

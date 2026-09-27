@@ -1,0 +1,42 @@
+schema_version: 1
+project_id: sample-project
+
+objective: "Criar um vídeo curto de exemplo."
+
+audience:
+  primary: "Público interessado no tema do vídeo."
+  desired_reaction:
+    - curiosity
+
+creative:
+  premise: "Uma apresentação curta introduz uma ideia."
+  hook: "E se olhássemos para essa ideia de outro jeito?"
+  key_message: "Uma ideia clara pode ser contada em poucos segundos."
+  tone:
+    - engaging
+  narrative_arc:
+    - setup
+    - conclusion
+
+visual_direction:
+  era: "contemporary"
+  style:
+    - editorial
+  color_notes:
+    - balanced
+  texture:
+    - clean
+  references: []
+
+audio_direction:
+  narration_style: "Clear and conversational"
+  music_style: "Subtle background music"
+  sound_notes: []
+
+constraints:
+  must_include:
+    - "A clear opening image"
+  avoid: []
+
+success_criteria:
+  - "The main idea is understandable without additional context."

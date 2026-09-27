@@ -1,0 +1,31 @@
+schema_version: 1
+project_id: sample-project
+version: 1
+status: draft
+
+scenes:
+  - id: scene-001
+    order: 1
+    duration_seconds: 3
+    purpose: hook
+    status: draft
+    script_scene_id: scene-001
+
+    visual:
+      description: "Uma pessoa apresenta uma ideia diretamente para a câmera."
+      composition: "Apresentador centralizado com espaço para texto."
+      camera:
+        framing: medium_shot
+        angle: eye_level
+        movement: static
+        lens: null
+      lighting:
+        style: soft_key_light
+        notes: "Iluminação uniforme e natural."
+      mood:
+        - curious
+
+    audio:
+      ambience: null
+      sfx: []
+      music_note: "Trilha discreta sob a narração."
