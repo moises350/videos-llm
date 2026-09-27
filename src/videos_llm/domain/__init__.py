@@ -19,3 +19,28 @@ __all__ = [
     "Script",
     "Storyboard",
 ]
+from videos_llm.domain.production import (
+    Asset,
+    AssetKind,
+    AttemptStatus,
+    AudioMetadata,
+    GenerationAttempt,
+    ImageMetadata,
+    ProductionStatus,
+    SceneProduction,
+    SelectionRole,
+    VideoMetadata,
+)
+
+__all__ = [
+    "Asset",
+    "AssetKind",
+    "AttemptStatus",
+    "AudioMetadata",
+    "GenerationAttempt",
+    "ImageMetadata",
+    "ProductionStatus",
+    "SceneProduction",
+    "SelectionRole",
+    "VideoMetadata",
+]
