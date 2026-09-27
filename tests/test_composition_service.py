@@ -155,6 +155,38 @@ def test_resolver_derives_audio_duration_from_source(
     )
 
 
+def test_resolver_rejects_fades_longer_than_derived_audio_duration(
+    project_with_selection: Path,
+    tmp_path: Path,
+) -> None:
+    imported = import_media(
+        project_with_selection,
+        "scene-001",
+        make_audio(tmp_path / "voice.wav", get_ffmpeg_executable()),
+    )
+    select_asset(
+        project_with_selection,
+        "scene-001",
+        "narration",
+        imported.asset.id,
+    )
+    plan = valid_single_scene_plan()
+    plan["audio_items"] = [
+        {
+            "id": "audio-voice",
+            "scene_id": "scene-001",
+            "role": "narration",
+            "start_seconds": 0,
+            "fade_in_seconds": 0.75,
+            "fade_out_seconds": 0.75,
+        }
+    ]
+    write_composition(project_with_selection, plan)
+
+    with pytest.raises(CompositionError, match="fades.*duration"):
+        resolve_composition(project_with_selection)
+
+
 def test_resolver_rejects_composition_for_another_project(
     project_dir: Path,
 ) -> None:

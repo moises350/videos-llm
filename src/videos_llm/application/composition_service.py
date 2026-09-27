@@ -187,6 +187,11 @@ def resolve_composition(
                 f"scene {item.scene_id} role {role.value} asset {asset.id} "
                 "duration is shorter than the requested trim and timeline"
             )
+        if item.fade_in_seconds + item.fade_out_seconds > effective + 1e-6:
+            raise CompositionError(
+                f"scene {item.scene_id} role {role.value} asset {asset.id} "
+                "fades cannot exceed the resolved audio duration"
+            )
         resolved_audio.append(
             ResolvedAudioItem(
                 item=item,

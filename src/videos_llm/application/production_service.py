@@ -246,24 +246,25 @@ def import_media(
         asset = existing_asset
         assets = list(state.assets)
 
-    is_selected = asset_id in state.selections.values()
-    attempt = GenerationAttempt(
-        id=_new_attempt_id(state),
-        scene_id=scene_id,
-        kind=asset.kind,
-        created_at=datetime.now(timezone.utc),
-        method=method,
-        provider=provider,
-        model=model,
-        prompt_path=prompt_path,
-        asset_ids=[asset_id],
-        status=(
-            AttemptStatus.APPROVED if is_selected else AttemptStatus.CANDIDATE
-        ),
-        notes=notes,
-    )
-
     try:
+        is_selected = asset_id in state.selections.values()
+        attempt = GenerationAttempt(
+            id=_new_attempt_id(state),
+            scene_id=scene_id,
+            kind=asset.kind,
+            created_at=datetime.now(timezone.utc),
+            method=method,
+            provider=provider,
+            model=model,
+            prompt_path=prompt_path,
+            asset_ids=[asset_id],
+            status=(
+                AttemptStatus.APPROVED
+                if is_selected
+                else AttemptStatus.CANDIDATE
+            ),
+            notes=notes,
+        )
         updated = SceneProduction.model_validate(
             state.model_copy(
                 update={

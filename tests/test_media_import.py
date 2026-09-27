@@ -66,6 +66,24 @@ def test_failed_probe_does_not_change_production_yaml(
     assert production_path(project_dir, "scene-001").read_bytes() == before
 
 
+def test_invalid_attempt_metadata_removes_new_managed_asset(
+    project_dir: Path,
+    tmp_path: Path,
+) -> None:
+    source = make_image(tmp_path / "candidate.png")
+
+    with pytest.raises(MediaImportError, match="project-relative"):
+        import_media(
+            project_dir,
+            "scene-001",
+            source,
+            prompt_path="../outside.md",
+        )
+
+    assert not production_path(project_dir, "scene-001").exists()
+    assert not list((project_dir / "media").rglob("*.*"))
+
+
 def test_import_rejects_checksum_prefix_collision(
     project_dir: Path,
     tmp_path: Path,

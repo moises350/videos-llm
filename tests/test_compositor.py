@@ -1,3 +1,4 @@
+import tomllib
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -213,3 +214,10 @@ def test_overlay_png_is_created_with_exact_text(tmp_path: Path) -> None:
     with Image.open(path) as image:
         assert image.mode == "RGBA"
         assert image.size == (360, 640)
+
+
+def test_pillow_requirement_supports_sized_default_font() -> None:
+    pyproject = tomllib.loads(
+        (Path(__file__).parents[1] / "pyproject.toml").read_text(encoding="utf-8")
+    )
+    assert "Pillow>=10.1,<13.0" in pyproject["project"]["dependencies"]
