@@ -8,6 +8,7 @@ build/
 dist/
 .venv/
 venv/
+.env.local
 
 .superpowers/
 *.tmp

@@ -14,6 +14,19 @@ python -m pip install -e ".[dev]"
 
 Isso instala também o comando `videos-llm` e uma distribuição de FFmpeg usada sem depender de uma instalação global.
 
+## Credenciais locais
+
+Credenciais de provedores ficam em `.env.local`, na raiz do repositório, e
+nunca são versionadas. Para usar a API Gemini, crie o arquivo com:
+
+```env
+GEMINI_API_KEY=sua_chave_aqui
+```
+
+Uma variável `GEMINI_API_KEY` já definida no ambiente do sistema tem
+prioridade. O carregador lê somente o segredo solicitado e não exporta as
+outras entradas do arquivo para o processo.
+
 ## Estrutura de um projeto
 
 - `project.yaml`: identidade e configuração técnica global.
