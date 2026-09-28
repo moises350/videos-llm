@@ -2,30 +2,22 @@
 
 ## Arco
 
-Começar com um jingle de televisão brasileira excessivamente alegre, curto e
-barato, com sintetizadores e metais digitais de meados dos anos 1990. A cada
-perda doméstica, acrescentar uma confirmação eletrônica seca com ressonância de
-caixa registradora. O jingle desafina poucos cents por vez, perde velocidade e
-chega às cenas institucionais quase irreconhecível.
+A montagem final é conduzida pelos primeiros 30 segundos de "Preciso Me
+Encontrar", de Cartola, em arquivo fornecido pelo usuário. A canção substitui a
+narração e o jingle anterior, criando tristeza, humanidade e realidade social
+sem transformar pobreza em caricatura. Preservar a dinâmica da gravação; aplicar
+fade de três segundos no encerramento para revelar o som da televisão desligando.
 
 ## Camadas por cena
 
-- scene-001: sting de telejornal, sala pequena, rua distante, zumbido de TV e
-  dois toques no smartphone.
-- scene-002: sala ficando oca, confirmações de caixa, dropouts de fita e sucção
-  eletrônica curta nas fitas.
-- scene-003: sala de comissão, obturadores e aplausos muito comprimidos; dentes
-  e bigodes quase subliminares, nunca guincho.
-- scene-004: aplausos promocionais, obturadores, vibração de celulares, papéis e
-  peso metálico das correntes; detalhe de bigodes abaixo do limiar consciente.
-- scene-005: ar-condicionado, microfone institucional, papéis arrastando, vibração
-  abafada de celulares e partículas metálicas sob a mesa; cliques podem lembrar
-  dentes sem virar efeito cômico.
-- scene-006: retirar a música, sustentar zumbido de TV, executar colapso de CRT
-  em ponto branco e terminar com clique seco de desligamento.
+- scene-001 a scene-005: manter a canção em primeiro plano; não acrescentar
+  narração. Ambientes, toques de celular, papéis, obturadores e metal podem
+  aparecer somente abaixo do limiar de distração.
+- scene-006: iniciar o fade da música, sustentar zumbido grave de TV, executar
+  uma contração tonal discreta e terminar com clique seco de desligamento.
 
 ## Restrições
 
-Sem fala das figuras públicas, sem slogans de bets, sem moedas cartunescas, sem
-guinchos de rato e sem clímax musical heroico. Entregar stems separados para
-music, ambience e sfx sempre que possível, 48 kHz.
+Sem narração, fala das figuras públicas, slogans de bets, moedas cartunescas,
+guinchos de rato ou clímax musical heroico. Não alterar melodia, letra ou
+andamento da faixa fornecida. Manter music e sfx separados, com saída em 48 kHz.

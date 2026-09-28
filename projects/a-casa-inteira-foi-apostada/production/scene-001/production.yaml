@@ -15,6 +15,19 @@ attempts:
   - asset-23dc821b133d
   status: approved
   notes: Approved scene-001 key image from native ImageGen
+- id: attempt-d42f5cc410f0
+  scene_id: scene-001
+  kind: audio
+  created_at: '2026-09-28T03:32:00.761304Z'
+  method: user_supplied
+  provider: local
+  model: null
+  prompt_path: null
+  asset_ids:
+  - asset-db994d6b478e
+  status: approved
+  notes: User-supplied authorized music track for the 30-second final cut; opening
+    excerpt
 assets:
 - id: asset-23dc821b133d
   kind: image
@@ -25,6 +38,18 @@ assets:
   metadata:
     width: 941
     height: 1672
+- id: asset-db994d6b478e
+  kind: audio
+  path: media/scene-001/audio/asset-db994d6b478e.mp3
+  sha256: db994d6b478ee15ffd51a5a1b128a73a7cd0cc27ac39b9a12880ad3f321e66e2
+  mime_type: audio/mpeg
+  created_at: '2026-09-28T03:32:00.760299Z'
+  metadata:
+    duration_seconds: 178.57
+    sample_rate: 44100
+    channels: 2
+    codec: mp3
 selections:
   key_image: asset-23dc821b133d
+  music: asset-db994d6b478e
 review_notes: []

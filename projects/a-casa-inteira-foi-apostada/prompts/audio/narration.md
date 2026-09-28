@@ -1,5 +1,9 @@
 # Narração
 
+> Abordagem arquivada. A montagem final aprovada não utiliza narração; o texto
+> permanece como referência editorial, enquanto a história é conduzida pela
+> música fornecida pelo usuário, pelas imagens e pelo letreiro final.
+
 Voz de reportagem televisiva brasileira dos anos 1990: adulta, sóbria,
 controlada, dicção clara e ritmo de notícia, sem indignação performática, sem
 tom de trailer e sem imitação de uma pessoa real. Gravar uma versão integral e

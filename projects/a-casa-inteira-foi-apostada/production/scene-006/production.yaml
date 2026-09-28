@@ -16,6 +16,19 @@ attempts:
   status: approved
   notes: Approved final scene-006 key image; direct edit of scene-002 continuity with
     inactive phone, sparse room, white television point and reflected family
+- id: attempt-01db3dc7653d
+  scene_id: scene-006
+  kind: audio
+  created_at: '2026-09-28T03:32:01.451858Z'
+  method: generated_local
+  provider: ffmpeg
+  model: null
+  prompt_path: prompts/audio/sound-design.md
+  asset_ids:
+  - asset-8abba234e6e1
+  status: approved
+  notes: Subtle television hum, collapsing high tone and dry shutdown click for final
+    scene
 assets:
 - id: asset-974f138d08b9
   kind: image
@@ -26,6 +39,18 @@ assets:
   metadata:
     width: 941
     height: 1672
+- id: asset-8abba234e6e1
+  kind: audio
+  path: media/scene-006/audio/asset-8abba234e6e1.wav
+  sha256: 8abba234e6e1fa06320e83508d3f25417110c7b28d35f669879d21a63973ddd6
+  mime_type: audio/wav
+  created_at: '2026-09-28T03:32:01.451858Z'
+  metadata:
+    duration_seconds: 7.0
+    sample_rate: 48000
+    channels: 2
+    codec: pcm_s16le
 selections:
   key_image: asset-974f138d08b9
+  sfx: asset-8abba234e6e1
 review_notes: []

@@ -46,48 +46,22 @@ visual_items:
     analog_preset: betacam_light
 
 audio_items:
-  - id: audio-narration-001
+  - id: audio-music-main
     scene_id: scene-001
-    role: narration
+    role: music
     start_seconds: 0
-    duration_seconds: 4
-    fade_in_seconds: 0.05
-    fade_out_seconds: 0.1
-  - id: audio-narration-002
-    scene_id: scene-002
-    role: narration
-    start_seconds: 4
-    duration_seconds: 6
-    fade_in_seconds: 0.05
-    fade_out_seconds: 0.1
-  - id: audio-narration-003
-    scene_id: scene-003
-    role: narration
-    start_seconds: 10
-    duration_seconds: 4
-    fade_in_seconds: 0.05
-    fade_out_seconds: 0.1
-  - id: audio-narration-004
-    scene_id: scene-004
-    role: narration
-    start_seconds: 14
-    duration_seconds: 4
-    fade_in_seconds: 0.05
-    fade_out_seconds: 0.1
-  - id: audio-narration-005
-    scene_id: scene-005
-    role: narration
-    start_seconds: 18
-    duration_seconds: 5
-    fade_in_seconds: 0.05
-    fade_out_seconds: 0.1
-  - id: audio-narration-006
+    duration_seconds: 30
+    fade_in_seconds: 0.2
+    fade_out_seconds: 3
+    gain_db: 0
+  - id: audio-sfx-tv-shutdown
     scene_id: scene-006
-    role: narration
+    role: sfx
     start_seconds: 23
     duration_seconds: 7
-    fade_in_seconds: 0.05
-    fade_out_seconds: 0.2
+    fade_in_seconds: 0.2
+    fade_out_seconds: 0
+    gain_db: -3
 
 overlays:
   - id: overlay-final

@@ -58,13 +58,12 @@ visual_direction:
     - "Smartphones, Pix, aplicativos e televisores inequivocamente de 2026."
 
 audio_direction:
-  narration_style: "Reportagem televisiva brasileira dos anos 1990, sóbria e sem indignação performática."
-  music_style: "Jingle televisivo excessivamente alegre que desafina e desacelera."
+  narration_style: "Sem narração na montagem final; a história é conduzida pelas imagens, pela música e pelo texto de encerramento."
+  music_style: "Primeiros 30 segundos de 'Preciso Me Encontrar', de Cartola, em arquivo fornecido pelo usuário, com fade prolongado no encerramento."
   sound_notes:
-    - "Confirmações eletrônicas com ressonância de caixa registradora."
-    - "Aplausos comprimidos e disparos de câmeras junto às figuras públicas."
-    - "Dentes e bigodes quase imperceptíveis, nunca guinchos cômicos."
-    - "Zumbido de TV, colapso de CRT e clique seco no final."
+    - "A canção ocupa o primeiro plano emocional; efeitos diegéticos permanecem discretos."
+    - "O volume da música cai nos três segundos finais."
+    - "Zumbido de TV, contração tonal e clique seco concluem o vídeo."
 
 constraints:
   must_include:

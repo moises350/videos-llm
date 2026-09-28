@@ -1,9 +1,6 @@
 from pathlib import Path
 
-import pytest
-
 from videos_llm.application.composition_service import (
-    CompositionError,
     load_composition_plan,
     resolve_composition,
 )
@@ -27,7 +24,7 @@ def test_pilot_creative_documents_and_six_scenes_are_valid() -> None:
     ]
 
 
-def test_pilot_uses_only_approved_narration_and_no_dialogue() -> None:
+def test_pilot_preserves_archived_editorial_narration_and_no_dialogue() -> None:
     loaded = load_project(PILOT)
     narration = " ".join(
         scene.narration for scene in loaded.script.scenes if scene.narration
@@ -58,17 +55,25 @@ def test_pilot_production_tracks_the_approved_scene_one_key_image() -> None:
         selected_id in attempt.asset_ids and attempt.status.value == "approved"
         for attempt in scene_one.attempts
     )
-    assert scene_one.attempts[-1].method == "imagegen"
-    assert scene_one.attempts[-1].prompt_path == "prompts/image/scene-001.md"
+    image_attempt = next(
+        attempt
+        for attempt in scene_one.attempts
+        if selected_id in attempt.asset_ids
+    )
+    assert image_attempt.method == "imagegen"
+    assert image_attempt.prompt_path == "prompts/image/scene-001.md"
 
 
-def test_pilot_composition_is_schema_valid_but_explicitly_not_render_ready() -> None:
+def test_pilot_composition_is_render_ready_with_approved_music_and_sfx() -> None:
     plan = load_composition_plan(PILOT)
     assert plan.duration_seconds == 30
     assert plan.output_filename == "a-casa-inteira-foi-apostada-final.mp4"
     assert plan.overlays[-1].text == "O sinal acabou. O prejuízo ficou."
-    with pytest.raises(CompositionError):
-        resolve_composition(PILOT)
+
+    resolved = resolve_composition(PILOT)
+    assert len(resolved.visual_items) == 6
+    assert [item.item.role for item in resolved.audio_items] == ["music", "sfx"]
+    assert all(item.path.is_file() for item in resolved.audio_items)
 
 
 def test_pilot_contains_three_character_guides_and_all_prompt_files() -> None:
