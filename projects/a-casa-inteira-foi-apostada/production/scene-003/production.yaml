@@ -2,7 +2,30 @@ schema_version: 1
 project_id: a-casa-inteira-foi-apostada
 scene_id: scene-003
 status: in_progress
-attempts: []
-assets: []
-selections: {}
+attempts:
+- id: attempt-32efab591111
+  scene_id: scene-003
+  kind: image
+  created_at: '2026-09-28T02:33:15.531236Z'
+  method: imagegen
+  provider: openai
+  model: null
+  prompt_path: prompts/image/scene-003.md
+  asset_ids:
+  - asset-e0f46677c05e
+  status: approved
+  notes: Approved scene-003 Virginia Fonseca editorial rat-head key image using user
+    references
+assets:
+- id: asset-e0f46677c05e
+  kind: image
+  path: media/scene-003/image/asset-e0f46677c05e.png
+  sha256: e0f46677c05e59484aaa7108e07caf8743c8d934b2ca0185c7d9bd5e45af002c
+  mime_type: image/png
+  created_at: '2026-09-28T02:33:15.531236Z'
+  metadata:
+    width: 941
+    height: 1672
+selections:
+  key_image: asset-e0f46677c05e
 review_notes: []
