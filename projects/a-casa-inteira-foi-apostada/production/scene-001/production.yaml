@@ -2,7 +2,29 @@ schema_version: 1
 project_id: a-casa-inteira-foi-apostada
 scene_id: scene-001
 status: in_progress
-attempts: []
-assets: []
-selections: {}
+attempts:
+- id: attempt-1c3ca1bbc774
+  scene_id: scene-001
+  kind: image
+  created_at: '2026-09-28T02:25:25.525945Z'
+  method: imagegen
+  provider: openai
+  model: null
+  prompt_path: prompts/image/scene-001.md
+  asset_ids:
+  - asset-23dc821b133d
+  status: approved
+  notes: Approved scene-001 key image from native ImageGen
+assets:
+- id: asset-23dc821b133d
+  kind: image
+  path: media/scene-001/image/asset-23dc821b133d.png
+  sha256: 23dc821b133d859f326dfab47ca70f165a71a1117792f5bf3f694a5355906d67
+  mime_type: image/png
+  created_at: '2026-09-28T02:25:25.525945Z'
+  metadata:
+    width: 941
+    height: 1672
+selections:
+  key_image: asset-23dc821b133d
 review_notes: []

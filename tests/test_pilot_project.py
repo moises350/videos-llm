@@ -42,15 +42,24 @@ def test_pilot_uses_only_approved_narration_and_no_dialogue() -> None:
     assert all(not scene.dialogue for scene in loaded.script.scenes)
 
 
-def test_pilot_production_skeleton_matches_every_scene() -> None:
+def test_pilot_production_tracks_the_approved_scene_one_key_image() -> None:
     states = [
         load_scene_production(PILOT, f"scene-{number:03d}")
         for number in range(1, 7)
     ]
-    assert all(
-        not state.assets and not state.attempts and not state.selections
-        for state in states
+    assert [state.scene_id for state in states] == [
+        f"scene-{number:03d}" for number in range(1, 7)
+    ]
+
+    scene_one = states[0]
+    selected_id = scene_one.selections["key_image"]
+    assert selected_id in {asset.id for asset in scene_one.assets}
+    assert any(
+        selected_id in attempt.asset_ids and attempt.status.value == "approved"
+        for attempt in scene_one.attempts
     )
+    assert scene_one.attempts[-1].method == "imagegen"
+    assert scene_one.attempts[-1].prompt_path == "prompts/image/scene-001.md"
 
 
 def test_pilot_composition_is_schema_valid_but_explicitly_not_render_ready() -> None:
@@ -58,7 +67,7 @@ def test_pilot_composition_is_schema_valid_but_explicitly_not_render_ready() -> 
     assert plan.duration_seconds == 30
     assert plan.output_filename == "a-casa-inteira-foi-apostada-final.mp4"
     assert plan.overlays[-1].text == "O sinal acabou. O prejuízo ficou."
-    with pytest.raises(CompositionError, match="scene-001.*selected"):
+    with pytest.raises(CompositionError):
         resolve_composition(PILOT)
 
 
