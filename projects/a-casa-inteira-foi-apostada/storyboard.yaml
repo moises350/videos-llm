@@ -117,8 +117,9 @@ scenes:
       description: >
         MauMau ZK reconhecível pelo corpo, boné, óculos dourados, correntes,
         relógio, tatuagens e gesto de mãos, com cabeça de rato larga cinza-
-        marrom integrada. Em um estúdio promocional de 2026, as fitas vindas da
-        casa se enrolam e viram novas correntes douradas.
+        marrom integrada. Em um estúdio promocional de 2026, celulares com
+        interfaces de aposta ilegíveis, comprovantes e fragmentos de dinheiro
+        se desfazem em partículas douradas e viram novas correntes.
       composition: >
         Plano americano frontal de programa promocional, personagem central e
         painéis abstratos de aposta sem marca legível ao fundo.
@@ -138,7 +139,7 @@ scenes:
       ambience: "Estúdio promocional com plateia distante."
       sfx:
         - "Aplausos comprimidos e obturadores."
-        - "Atrito metálico das fitas virando correntes."
+        - "Vibração de celulares, papéis e partículas virando correntes."
       music_note: "O jingle desacelera e ganha instabilidade de fita."
 
   - id: scene-005
@@ -152,15 +153,17 @@ scenes:
         Ciro Nogueira reconhecível pelo cabelo grisalho, terno azul-marinho,
         camisa branca, gravata lavanda e relógio, diante de microfone de
         comissão com cabeça de rato escura integrada. Enquanto ele move a boca
-        sem diálogo audível, fitas passam sob a mesa e seguem para corredores
-        institucionais como metáfora editorial, não como registro de pagamento.
+        sem diálogo audível, celulares com interfaces de aposta ilegíveis,
+        comprovantes e fragmentos de dinheiro se desfazem em partículas douradas
+        sob a mesa e seguem para um corredor institucional como metáfora editorial,
+        não como registro de pagamento.
       composition: >
-        Plano médio formal com mesa, microfone e arquitetura pública; as fitas
-        ocupam o rodapé do quadro sem indicar destinatário específico.
+        Plano médio formal com mesa, microfone e arquitetura pública; o rastro
+        ocupa o rodapé do quadro sem tocar o personagem ou indicar destinatário.
       camera:
         framing: medium_institutional
         angle: eye_level
-        movement: "Pan mínimo acompanha as fitas e retorna ao rosto."
+        movement: "Pan mínimo acompanha o rastro sob a mesa e retorna ao rosto."
         lens: "Zoom broadcast equivalente a 55–75 mm."
       lighting:
         style: "Luz fria e homogênea de plenário televisionado."
@@ -173,7 +176,7 @@ scenes:
       ambience: "Ar-condicionado, sala pública e reverberação curta de microfone."
       sfx:
         - "Cliques de câmera que se confundem com dentes muito discretos."
-        - "Deslizamento das fitas sob a mesa."
+        - "Papéis arrastando, vibração abafada de celulares e partículas metálicas."
       music_note: "O jingle já está grave, lento e quase irreconhecível."
 
   - id: scene-006

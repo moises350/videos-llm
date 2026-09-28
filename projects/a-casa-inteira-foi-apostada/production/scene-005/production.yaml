@@ -2,7 +2,30 @@ schema_version: 1
 project_id: a-casa-inteira-foi-apostada
 scene_id: scene-005
 status: in_progress
-attempts: []
-assets: []
-selections: {}
+attempts:
+- id: attempt-9a81f3747a7e
+  scene_id: scene-005
+  kind: image
+  created_at: '2026-09-28T02:58:59.049418Z'
+  method: imagegen
+  provider: openai
+  model: null
+  prompt_path: prompts/image/scene-005.md
+  asset_ids:
+  - asset-b00071cc6166
+  status: approved
+  notes: Approved scene-005 Ciro Nogueira editorial rat-head key image; money and
+    receipts mixed with phones showing unbranded betting-like interfaces
+assets:
+- id: asset-b00071cc6166
+  kind: image
+  path: media/scene-005/image/asset-b00071cc6166.png
+  sha256: b00071cc61663dd417198aba39962caab179ff58c9c9bc327c9f030a7b37ce78
+  mime_type: image/png
+  created_at: '2026-09-28T02:58:59.048418Z'
+  metadata:
+    width: 941
+    height: 1672
+selections:
+  key_image: asset-b00071cc6166
 review_notes: []

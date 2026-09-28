@@ -4,9 +4,10 @@ source_reference: user-supplied
 
 ## Função narrativa
 
-Representar proximidade política e institucional com o ecossistema das bets. As
-fitas sob a mesa e nos corredores são símbolo editorial e não documentação de
-um pagamento, contrato ou crime.
+Representar proximidade política e institucional com o ecossistema das bets. O
+rastro de celulares, recibos, fragmentos de dinheiro e partículas douradas sob
+a mesa e no corredor é símbolo editorial e não documentação de pagamento,
+contrato ou crime.
 
 ## Invariantes reconhecíveis
 

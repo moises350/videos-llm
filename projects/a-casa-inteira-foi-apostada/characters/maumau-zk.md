@@ -5,8 +5,9 @@ source_reference: user-supplied
 ## Função narrativa
 
 Representar a fusão de promoção de apostas, entretenimento e ostentação. A
-transformação das fitas domésticas em correntes é metáfora visual; não afirma o
-destino de um pagamento específico.
+transformação de celulares, comprovantes e fragmentos de dinheiro em partículas
+douradas e correntes é metáfora visual; não afirma o destino de um pagamento
+específico.
 
 ## Invariantes reconhecíveis
 

@@ -16,10 +16,11 @@ chega às cenas institucionais quase irreconhecível.
   eletrônica curta nas fitas.
 - scene-003: sala de comissão, obturadores e aplausos muito comprimidos; dentes
   e bigodes quase subliminares, nunca guincho.
-- scene-004: aplausos promocionais, obturadores e peso metálico das correntes;
-  detalhe de bigodes abaixo do limiar consciente.
-- scene-005: ar-condicionado, microfone institucional e fitas deslizando sob a
-  mesa; cliques podem lembrar dentes sem virar efeito cômico.
+- scene-004: aplausos promocionais, obturadores, vibração de celulares, papéis e
+  peso metálico das correntes; detalhe de bigodes abaixo do limiar consciente.
+- scene-005: ar-condicionado, microfone institucional, papéis arrastando, vibração
+  abafada de celulares e partículas metálicas sob a mesa; cliques podem lembrar
+  dentes sem virar efeito cômico.
 - scene-006: retirar a música, sustentar zumbido de TV, executar colapso de CRT
   em ponto branco e terminar com clique seco de desligamento.
 
