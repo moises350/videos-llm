@@ -15,6 +15,19 @@ attempts:
   - asset-3fa548ab6d16
   status: approved
   notes: Approved scene-002 key image derived from scene-001 continuity reference
+- id: attempt-0a5d403ad073
+  scene_id: scene-002
+  kind: video
+  created_at: '2026-09-28T20:06:43.683804Z'
+  method: local_mask_composite
+  provider: ffmpeg
+  model: null
+  prompt_path: prompts/video/scene-002.md
+  asset_ids:
+  - asset-75dc6e70666a
+  status: approved
+  notes: User-approved 6-second scene-002 montage built from Flow motion, locally
+    masked loss stages, and analog dropout cuts
 assets:
 - id: asset-3fa548ab6d16
   kind: image
@@ -25,6 +38,20 @@ assets:
   metadata:
     width: 941
     height: 1672
+- id: asset-75dc6e70666a
+  kind: video
+  path: media/scene-002/video/asset-75dc6e70666a.mp4
+  sha256: 75dc6e70666a5055a3fa0244ce672b5222d7d1d1a661d9de618809b0e38282f0
+  mime_type: video/mp4
+  created_at: '2026-09-28T20:06:43.682801Z'
+  metadata:
+    width: 720
+    height: 1280
+    duration_seconds: 5.97
+    frame_rate: 30.17
+    codec: h264
+    has_audio: false
 selections:
   key_image: asset-3fa548ab6d16
+  video: asset-75dc6e70666a
 review_notes: []

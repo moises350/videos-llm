@@ -47,16 +47,18 @@ subliminares.
 ## Cor e progressão
 
 1. A sala começa com tons domésticos gastos, azul de TV e algum calor de pele.
-2. A família perde saturação enquanto fitas verdes e magenta entram no celular.
+2. A família perde saturação e objetos concretos desaparecem depois de falhas de fita.
 3. Os ambientes dos ratos preservam dourado, vermelho e azul de televisão.
 4. O retorno à casa elimina quase toda a cor e termina no preto do televisor.
 
-## Fitas luminosas
+## Desaparecimentos domésticos
 
-As fitas são a única matéria impossível além das cabeças. Elas nascem de
-objetos domésticos, atravessam o telefone e reaparecem como correntes ou fluxo
-institucional. Devem parecer um defeito eletrônico físico capturado em vídeo,
-com bleed de croma e bordas instáveis, não partículas digitais de fantasia.
+A perda doméstica é mostrada por continuidade interrompida: uma falha horizontal
+de fita encobre o corte e, quando o sinal estabiliza, um conjunto de objetos já
+não está mais na sala. O vazio precisa ser concreto e legível. Não usar feixes,
+fitas luminosas, objetos voando, dissolução digital ou partículas de fantasia.
+Nos ambientes de influência e poder, dinheiro, comprovantes e celulares podem
+aparecer como metáfora editorial, sem estabelecer uma transferência factual.
 
 ## Texto e acabamento
 

@@ -1,12 +1,16 @@
-# Scene 002 — movimento
+# Scene 002 — montagem aprovada
 
-Animate only from the approved scene-002 keyframe. Six seconds. Hold a stable
-wide broadcast tableau and make a slow optical pull-out. In clear sequence,
-groceries, bank card, work helmet and photographs unravel into unstable green-
-magenta ribbons and enter the phone. Remove each object only after its ribbon
-forms. The family remains fully human, breathing minimally, and loses saturation
-rather than anatomy. Add small composite-color smears and one dropout at each
-electronic confirmation.
+Six seconds, locked wide broadcast tableau. Begin with 1.9 seconds of the same
+fully human family in restrained natural motion while the man looks at the
+smartphone. At 1.9 seconds, use a 0.1-second horizontal Betacam dropout as a
+hard discontinuity. Return to the identical room for 1.9 seconds with the
+grocery bags and bank card absent; the construction helmet and family
+photographs remain. At 3.9 seconds, use a second 0.1-second horizontal Betacam
+dropout. Return for the final 2 seconds with the helmet and photographs absent
+and the family more desaturated. Preserve people, clothing, furniture, walls,
+camera position and scale across all three states.
 
-Do not move walls, invent possessions, deform bodies, create clean particles,
-show a logo, add text or turn the camera into a cinematic dolly.
+Nothing flies toward the phone and nobody physically transforms. No luminous
+ribbons, dissolves, morphing, magic particles, readable logos, generated text,
+new possessions, camera zoom or cinematic movement. The disappearance is
+understood only from the cut, the analog signal failure and the empty spaces.

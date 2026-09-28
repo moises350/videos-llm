@@ -47,21 +47,23 @@ scenes:
     script_scene_id: scene-002
     visual:
       description: >
-        Mantendo a mesma sala e a mesma família humana, sacolas de mercado, um
-        cartão bancário, um capacete de trabalho e retratos familiares se
-        desfazem em fitas luminosas e entram no smartphone. Os móveis somem por
-        etapas e a pele da família perde cor, mas ninguém se transforma.
+        Mantendo a mesma sala e a mesma família humana, cada confirmação no
+        smartphone é seguida por uma falha breve de fita. Primeiro somem as
+        sacolas de mercado e o cartão bancário; depois, o capacete de trabalho
+        e os retratos familiares. Os espaços vazios permanecem no quadro e a
+        família perde cor, mas ninguém se transforma.
       composition: >
-        Plano geral fixo o bastante para ler cada objeto antes de desaparecer;
-        o telefone é o ponto de fuga das fitas, sem logomarca de bet legível.
+        Plano geral fixo, com o smartphone no primeiro plano e os objetos
+        concretos legíveis antes de cada corte. A continuidade da sala torna
+        cada ausência perceptível; nenhuma marca de bet fica legível.
       camera:
         framing: wide_domestic_tableau
         angle: eye_level
-        movement: "Leve recuo de zoom enquanto o cômodo esvazia."
+        movement: "Câmera fixa; somente o movimento humano contido da tomada original."
         lens: "Zoom broadcast equivalente a 28–35 mm."
       lighting:
         style: "Luz prática de sala que enfraquece junto com a saturação."
-        notes: "As fitas emitem verde eletrônico e magenta composto sem parecer magia limpa."
+        notes: "A imagem perde cor depois de cada falha; nada brilha ou se converte em partículas."
       mood:
         - helpless
         - uncanny
@@ -69,9 +71,8 @@ scenes:
     audio:
       ambience: "O ambiente doméstico fica progressivamente oco."
       sfx:
-        - "Confirmações eletrônicas com cauda de caixa registradora."
-        - "Pequenos dropouts de fita a cada desaparecimento."
-      music_note: "O jingle começa a desafinar e perder velocidade."
+        - "Dois dropouts curtos de fita marcam os cortes de perda."
+      music_note: "A canção permanece em primeiro plano, sem confirmação eletrônica destacada."
 
   - id: scene-003
     order: 3

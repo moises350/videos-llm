@@ -11,11 +11,11 @@ visual_items:
     analog_preset: betacam_light
   - id: visual-scene-002
     scene_id: scene-002
-    role: key_image
+    role: video
     start_seconds: 4
     duration_seconds: 6
-    motion: pull_out
-    analog_preset: betacam_light
+    motion: static
+    analog_preset: none
   - id: visual-scene-003
     scene_id: scene-003
     role: key_image

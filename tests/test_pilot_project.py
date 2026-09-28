@@ -76,6 +76,17 @@ def test_pilot_composition_is_render_ready_with_approved_music_and_sfx() -> None
     assert all(item.path.is_file() for item in resolved.audio_items)
 
 
+def test_pilot_composition_uses_approved_scene_two_video() -> None:
+    resolved = resolve_composition(PILOT)
+    scene_two = next(
+        item for item in resolved.visual_items if item.item.scene_id == "scene-002"
+    )
+
+    assert scene_two.item.role == "video"
+    assert scene_two.asset.kind.value == "video"
+    assert scene_two.path.suffix == ".mp4"
+
+
 def test_pilot_contains_three_character_guides_and_all_prompt_files() -> None:
     assert {path.name for path in (PILOT / "characters").glob("*.md")} == {
         "virginia-fonseca.md",

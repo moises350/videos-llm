@@ -160,7 +160,11 @@ def resolve_composition(
         asset, path = selected_asset(item.scene_id, role)
         if isinstance(asset.metadata, VideoMetadata):
             required_duration = item.trim_start_seconds + item.duration_seconds
-            if required_duration > asset.metadata.duration_seconds + 1e-6:
+            frame_tolerance = 1 / asset.metadata.frame_rate
+            if (
+                required_duration
+                > asset.metadata.duration_seconds + frame_tolerance + 1e-6
+            ):
                 raise CompositionError(
                     f"scene {item.scene_id} role {role.value} asset {asset.id} "
                     "duration is shorter than the requested trim and timeline"

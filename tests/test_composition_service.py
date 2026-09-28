@@ -123,6 +123,28 @@ def test_resolver_rejects_video_shorter_than_timeline(
         resolve_composition(project_dir)
 
 
+def test_resolver_allows_sub_frame_video_duration_rounding(
+    project_dir: Path,
+    tmp_path: Path,
+) -> None:
+    imported = import_media(
+        project_dir,
+        "scene-001",
+        make_video(tmp_path / "rounded.mp4", get_ffmpeg_executable()),
+    )
+    select_asset(project_dir, "scene-001", "video", imported.asset.id)
+    metadata = imported.asset.metadata
+    plan = valid_single_scene_plan(role="video")
+    plan["visual_items"][0]["duration_seconds"] = (
+        metadata.duration_seconds + 0.5 / metadata.frame_rate
+    )
+    write_composition(project_dir, plan)
+
+    resolved = resolve_composition(project_dir)
+
+    assert resolved.visual_items[0].asset.id == imported.asset.id
+
+
 def test_resolver_derives_audio_duration_from_source(
     project_with_selection: Path,
     tmp_path: Path,
