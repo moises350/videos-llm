@@ -2,7 +2,30 @@ schema_version: 1
 project_id: a-casa-inteira-foi-apostada
 scene_id: scene-006
 status: in_progress
-attempts: []
-assets: []
-selections: {}
+attempts:
+- id: attempt-c70ce8709684
+  scene_id: scene-006
+  kind: image
+  created_at: '2026-09-28T03:12:11.201295Z'
+  method: imagegen
+  provider: openai
+  model: null
+  prompt_path: prompts/image/scene-006.md
+  asset_ids:
+  - asset-974f138d08b9
+  status: approved
+  notes: Approved final scene-006 key image; direct edit of scene-002 continuity with
+    inactive phone, sparse room, white television point and reflected family
+assets:
+- id: asset-974f138d08b9
+  kind: image
+  path: media/scene-006/image/asset-974f138d08b9.png
+  sha256: 974f138d08b9213d6bfea030d6a5ad52db916c835b9046330a6994bbca7b2fc7
+  mime_type: image/png
+  created_at: '2026-09-28T03:12:11.201295Z'
+  metadata:
+    width: 941
+    height: 1672
+selections:
+  key_image: asset-974f138d08b9
 review_notes: []
