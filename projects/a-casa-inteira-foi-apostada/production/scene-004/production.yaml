@@ -2,7 +2,30 @@ schema_version: 1
 project_id: a-casa-inteira-foi-apostada
 scene_id: scene-004
 status: in_progress
-attempts: []
-assets: []
-selections: {}
+attempts:
+- id: attempt-97da37305119
+  scene_id: scene-004
+  kind: image
+  created_at: '2026-09-28T02:40:35.316869Z'
+  method: imagegen
+  provider: openai
+  model: null
+  prompt_path: prompts/image/scene-004.md
+  asset_ids:
+  - asset-ba101f037b09
+  status: approved
+  notes: Approved scene-004 MauMau ZK editorial rat-head key image using user reference;
+    phones, receipts and money disintegrating into gold chains
+assets:
+- id: asset-ba101f037b09
+  kind: image
+  path: media/scene-004/image/asset-ba101f037b09.png
+  sha256: ba101f037b09c66efc28f4a8ae31873ad7b81beb10c4fc4a75f6285196256b42
+  mime_type: image/png
+  created_at: '2026-09-28T02:40:35.315868Z'
+  metadata:
+    width: 941
+    height: 1672
+selections:
+  key_image: asset-ba101f037b09
 review_notes: []
