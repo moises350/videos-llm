@@ -16,6 +16,19 @@ attempts:
   status: approved
   notes: Approved scene-003 Virginia Fonseca editorial rat-head key image using user
     references
+- id: attempt-8c7deeba4acf
+  scene_id: scene-003
+  kind: video
+  created_at: '2026-09-28T20:48:58.503143Z'
+  method: google_flow
+  provider: google
+  model: null
+  prompt_path: prompts/video/scene-003.md
+  asset_ids:
+  - asset-4a6ca47d3d9f
+  status: approved
+  notes: User-approved 4-second Virginia Fonseca editorial rat-head motion clip generated
+    in Google Flow; source audio excluded from final composition
 assets:
 - id: asset-e0f46677c05e
   kind: image
@@ -26,6 +39,20 @@ assets:
   metadata:
     width: 941
     height: 1672
+- id: asset-4a6ca47d3d9f
+  kind: video
+  path: media/scene-003/video/asset-4a6ca47d3d9f.mp4
+  sha256: 4a6ca47d3d9feded5ad590ee58a751f38796e6404c8e34ee909d091433f423db
+  mime_type: video/mp4
+  created_at: '2026-09-28T20:48:58.503143Z'
+  metadata:
+    width: 720
+    height: 1280
+    duration_seconds: 4.01
+    frame_rate: 24.0
+    codec: h264
+    has_audio: true
 selections:
   key_image: asset-e0f46677c05e
+  video: asset-4a6ca47d3d9f
 review_notes: []

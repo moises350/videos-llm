@@ -87,6 +87,17 @@ def test_pilot_composition_uses_approved_scene_two_video() -> None:
     assert scene_two.path.suffix == ".mp4"
 
 
+def test_pilot_composition_uses_approved_scene_three_video() -> None:
+    resolved = resolve_composition(PILOT)
+    scene_three = next(
+        item for item in resolved.visual_items if item.item.scene_id == "scene-003"
+    )
+
+    assert scene_three.item.role == "video"
+    assert scene_three.asset.kind.value == "video"
+    assert scene_three.path.suffix == ".mp4"
+
+
 def test_pilot_contains_three_character_guides_and_all_prompt_files() -> None:
     assert {path.name for path in (PILOT / "characters").glob("*.md")} == {
         "virginia-fonseca.md",
