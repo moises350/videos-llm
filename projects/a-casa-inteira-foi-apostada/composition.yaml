@@ -25,11 +25,11 @@ visual_items:
     analog_preset: none
   - id: visual-scene-004
     scene_id: scene-004
-    role: key_image
+    role: video
     start_seconds: 14
     duration_seconds: 4
-    motion: push_in
-    analog_preset: betacam_heavy
+    motion: static
+    analog_preset: none
   - id: visual-scene-005
     scene_id: scene-005
     role: key_image

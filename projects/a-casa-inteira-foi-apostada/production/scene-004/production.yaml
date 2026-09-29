@@ -16,6 +16,19 @@ attempts:
   status: approved
   notes: Approved scene-004 MauMau ZK editorial rat-head key image using user reference;
     phones, receipts and money disintegrating into gold chains
+- id: attempt-db48b0691143
+  scene_id: scene-004
+  kind: video
+  created_at: '2026-09-29T23:25:40.758010Z'
+  method: google_flow
+  provider: google
+  model: null
+  prompt_path: prompts/video/scene-004.md
+  asset_ids:
+  - asset-fdd6fabb8dc5
+  status: approved
+  notes: User-approved 4-second MauMau ZK editorial rat-head motion clip generated
+    in Google Flow; source audio excluded from final composition
 assets:
 - id: asset-ba101f037b09
   kind: image
@@ -26,6 +39,20 @@ assets:
   metadata:
     width: 941
     height: 1672
+- id: asset-fdd6fabb8dc5
+  kind: video
+  path: media/scene-004/video/asset-fdd6fabb8dc5.mp4
+  sha256: fdd6fabb8dc54e63f59c37095d67916ff2929e051d419833e7ed586b0d3fbb0c
+  mime_type: video/mp4
+  created_at: '2026-09-29T23:25:40.758010Z'
+  metadata:
+    width: 720
+    height: 1280
+    duration_seconds: 4.01
+    frame_rate: 24.0
+    codec: h264
+    has_audio: true
 selections:
   key_image: asset-ba101f037b09
+  video: asset-fdd6fabb8dc5
 review_notes: []
